@@ -1,11 +1,11 @@
 
 import React from 'react'
-import Navbar from './Navbar'
+import Nav from './Nav/index.jsx'
 import Footer from './Footer'
 const Home = () =>{
   return(
     <div>
-      <Navbar/>
+      <Nav/>
       <h1>Hi Home</h1>
       <Footer/>
     </div>

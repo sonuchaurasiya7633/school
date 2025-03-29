@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-
-const Navbar = () => {
+import "./nav.css"
+const Nav = () => {
   return (
     <div>
       <nav
@@ -53,7 +53,7 @@ const Navbar = () => {
                 fontSize: 17,
               }}
             >
-              Home
+             <i class="ri-home-3-fill"> Home</i>
             </Link>
           </li>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
                 fontSize: 17,
               }}
             >
-              Teachers
+              <i class="ri-presentation-line"> Teachers</i>
             </Link>
           </li>
 
@@ -91,7 +91,7 @@ const Navbar = () => {
                 fontSize: 17,
               }}
             >
-              Holidays
+              <i class="ri-calendar-fill"> Holidays</i>
             </Link>
           </li>
 
@@ -110,7 +110,7 @@ const Navbar = () => {
                 fontSize: 17,
               }}
             >
-              Contact Us
+              <i class="ri-contacts-book-3-fill"> Contact Us</i>
             </Link>
           </li>
 
@@ -122,7 +122,7 @@ const Navbar = () => {
             }}
           >
             <Link
-              to="/TalkToUs"
+              to="/TalkToUs" className='talk-btn'
               style={{
                 textDecoration: 'none',
                 color: 'white',
@@ -141,4 +141,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nav;

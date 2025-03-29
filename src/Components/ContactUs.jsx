@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Nav from './Nav/index.jsx'
 import Footer from './Footer'
 const ContactUs = () => {
   return (
     <div>
-        <Navbar/>
+        <Nav/>
             <h1>Hi ContactUs</h1>
         <Footer/>
     </div>

@@ -3,12 +3,14 @@ import {
    Routes,
     Route
   } from 'react-router-dom'
+  import 'remixicon/fonts/remixicon.css'
 import Home from './Components/Home'
 import Teachers from './Components/Teachers'
 import Holidays from './Components/holidays'
 import ContactUs from './Components/ContactUs'
 import NotFound from './Components/NotFound'
 import TalkToUs from './Components/TalkToUs'
+
 const App = ()=>{
   return (
     <BrowserRouter>
