@@ -2,7 +2,7 @@ const Footer= () =>{
   return(
     <footer style={{
        padding:" 60px 100px",
-       background:"#03011c",
+       background:"#183B4E",
        display:"flex",
        gap:32
     }}>
