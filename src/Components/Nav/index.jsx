@@ -53,7 +53,7 @@ const Nav = () => {
                 fontSize: 17,
               }}
             >
-             <i class="ri-home-3-fill"> Home</i>
+             <i className="ri-home-3-fill"> Home</i>
             </Link>
           </li>
 
@@ -72,7 +72,7 @@ const Nav = () => {
                 fontSize: 17,
               }}
             >
-              <i class="ri-presentation-line"> Teachers</i>
+              <i className="ri-presentation-line"> Teachers</i>
             </Link>
           </li>
 
@@ -91,7 +91,7 @@ const Nav = () => {
                 fontSize: 17,
               }}
             >
-              <i class="ri-calendar-fill"> Holidays</i>
+              <i className="ri-calendar-fill"> Holidays</i>
             </Link>
           </li>
 
@@ -110,7 +110,7 @@ const Nav = () => {
                 fontSize: 17,
               }}
             >
-              <i class="ri-contacts-book-3-fill"> Contact Us</i>
+              <i className="ri-contacts-book-3-fill"> Contact Us</i>
             </Link>
           </li>
 

@@ -38,24 +38,24 @@ const Footer = () => {
           </li>
           <li>
             <Link to="/teachers" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-presentation-line"> Teachers</i> 
+            <i className="ri-presentation-line"> Teachers</i> 
             </Link>
           </li>
           <li>
             <Link to="/holidays" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-calendar-fill"> Holidays</i>
+            <i className="ri-calendar-fill"> Holidays</i>
             </Link>
           </li>
           <li style={{
             
           }}>
             <Link to="/contact-us" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-contacts-book-3-fill"> Contact Us</i>
+            <i className="ri-contacts-book-3-fill"> Contact Us</i>
             </Link>
           </li>
           <li>
             <Link to="/TalkToUs" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-kakao-talk-fill"> Talk to Us</i> 
+            <i className="ri-kakao-talk-fill"> Talk to Us</i> 
             </Link>
           </li>
         </ul>
@@ -80,27 +80,27 @@ const Footer = () => {
               rel="noopener noreferrer"
               style={{ color: "white", textDecoration: "none" }}
             >
-             <i class="ri-facebook-circle-fill">  Facebook </i> 
+             <i className="ri-facebook-circle-fill">  Facebook </i> 
             </Link>
           </li>
           <li>
             <Link to="#" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-youtube-fill">  YouTube</i>
+            <i className="ri-youtube-fill">  YouTube</i>
             </Link>
           </li>
           <li>
             <Link to="#" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-twitter-fill">  Twitter</i>
+            <i className="ri-twitter-fill">  Twitter</i>
             </Link>
           </li>
           <li>
             <Link to="#" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-instagram-fill">  Instagram</i>
+            <i className="ri-instagram-fill">  Instagram</i>
             </Link>
           </li>
           <li>
             <Link href="#" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-telegram-fill">  Telegram</i> 
+            <i className="ri-telegram-fill"> Telegram</i> 
             </Link>
           </li>
           <li>
@@ -110,7 +110,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               style={{ color: "white", textDecoration: "none" }}
             >
-              <i class="ri-linkedin-box-fill">  LinkedIn</i>
+              <i className="ri-linkedin-box-fill">  LinkedIn</i>
             </Link>
           </li>
         </ul>
@@ -176,5 +176,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
