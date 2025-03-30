@@ -1,5 +1,32 @@
-import { Link } from 'react-router-dom';
+import { href, Link } from 'react-router-dom';
 import "./nav.css"
+ const menus = [
+  {
+    label:'home',
+    href:'/',
+    icons: <i className="ri-home-3-fill"></i>,
+  },
+
+  {
+    label:'Teachers',
+    href:'/Teachers',
+    icons:<i className="ri-presentation-line"></i>,
+  },
+
+  {
+    label:'Holidays',
+    href:'/Holidays',
+    icons: <i className="ri-calendar-fill"> </i>,
+  },
+
+  {
+    label:'Contact Us',
+    href:'/Contact-Us',
+    icons: <i className="ri-contacts-book-3-fill"></i>,
+  },
+ ]
+
+
 const Nav = () => {
   return (
     <div>
@@ -35,84 +62,34 @@ const Nav = () => {
             listStyle: 'none',
             padding: 0,
             margin: 0,
-          }}
-        >
-          <li
+          }} >
+
+            
+           {
+           menus.map(function(menu){
+            return (
+              <li
             style={{
               display: 'flex',
               alignItems: 'center',
               padding: '32px 24px',
-            }}
-          >
+            }}>
             {/* Use <Link> with the "to" attribute */}
             <Link
-              to="/"
+              to={menu.href}
               style={{
                 textDecoration: 'none',
                 color: 'black',
                 fontSize: 17,
               }}
             >
-             <i className="ri-home-3-fill"> Home</i>
+             {menu.icons}  {menu.label}
             </Link>
           </li>
 
-          <li
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              padding: '16px 24px',
-            }}
-          >
-            <Link
-              to="/Teachers"
-              style={{
-                textDecoration: 'none',
-                color: 'black',
-                fontSize: 17,
-              }}
-            >
-              <i className="ri-presentation-line"> Teachers</i>
-            </Link>
-          </li>
-
-          <li
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              padding: '16px 24px',
-            }}
-          >
-            <Link
-              to="/Holidays"
-              style={{
-                textDecoration: 'none',
-                color: 'black',
-                fontSize: 17,
-              }}
-            >
-              <i className="ri-calendar-fill"> Holidays</i>
-            </Link>
-          </li>
-
-          <li
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              padding: '32px 24px',
-            }}
-          >
-            <Link
-              to="/Contact-Us"
-              style={{
-                textDecoration: 'none',
-                color: 'black',
-                fontSize: 17,
-              }}
-            >
-              <i className="ri-contacts-book-3-fill"> Contact Us</i>
-            </Link>
-          </li>
+            )
+           })
+           }
 
           <li
             style={{
