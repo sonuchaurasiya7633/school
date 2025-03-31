@@ -11,7 +11,7 @@ const Footer = () => {
       }}
     >
       <div style={{ width: "100%" }}>
-        <h1 style={{ color: "#f5f5f5", fontWeight: "500" }}><i class="ri-school-fill"> Apna School</i></h1>
+        <h1 style={{ color: "#f5f5f5", fontWeight: "500" }}><i className="ri-school-fill"> Apna School</i></h1>
         <p style={{ color: "white" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           vehicula, nunc at sollicitudin ultrices, odio nisl varius nisl, nec
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       <div style={{ width: "100%" }}>
-        <h2 style={{ color: "#f5f5f5", fontWeight: "500" }}><i class="ri-corner-up-right-double-line"> Useful Links</i></h2>
+        <h2 style={{ color: "#f5f5f5", fontWeight: "500" }}><i className="ri-corner-up-right-double-line"> Useful Links</i></h2>
         <ul
           style={{
             padding: 0,
@@ -33,7 +33,7 @@ const Footer = () => {
         >
           <li>
             <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-            <i class="ri-home-4-line"> Home</i>
+            <i className="ri-home-4-line"> Home</i>
             </Link>
           </li>
           <li>

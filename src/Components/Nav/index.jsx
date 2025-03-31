@@ -1,4 +1,4 @@
-import { href, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import "./nav.css"
  const menus = [
   {
@@ -53,7 +53,7 @@ const Nav = () => {
             width="60px"
             height="60px"
           />
-          <h1>Apna School</h1>
+          <h1>Success Point School</h1>
         </div>
 
         <ul
@@ -66,14 +66,15 @@ const Nav = () => {
 
             
            {
-           menus.map(function(menu){
+           menus.map(function(menu,index){
             return (
-              <li
+              <li key={index}
             style={{
               display: 'flex',
               alignItems: 'center',
               padding: '32px 24px',
-            }}>
+            }}
+            >
             {/* Use <Link> with the "to" attribute */}
             <Link
               to={menu.href}
