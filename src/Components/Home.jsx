@@ -10,7 +10,7 @@ const Home = () =>{
       <div>
        <header className='grid grid-cols-1 md:grid-cols-2 p-4 md:p-12 bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500'>
         <div>
-          <img src='./images/student.jpg' alt='' className='rounded-full w-full md:w-3/4 border-4' />
+          <img src='./images/student.jpg' alt='' className='rounded-full w-full md:w-3/4 border-4 animate-pulse transition-all duration-1000 ease-in-out hover:scale-150 hover:rotate-12' />
         </div>
         <div className='flex flex-col gap-4 justify-center'>
           <h1 className='text-2xl md:text-5xl font-bold text-white'>"Say Hello! Success Point"</h1>
