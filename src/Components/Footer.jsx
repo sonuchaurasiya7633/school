@@ -2,105 +2,76 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer
-      style={{
-        padding: "60px 100px",
-        background: "#183B4E",
-        display: "flex",
-        gap: 32,
-      }}
-    >
-      <div style={{ width: "100%" }}>
-        <h1 style={{ color: "#f5f5f5", fontWeight: "500" }}><i className="ri-school-fill"> Apna School</i></h1>
-        <p style={{ color: "white" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          vehicula, nunc at sollicitudin ultrices, odio nisl varius nisl, nec
-          feugiat justo dolor nec.
+    <footer className="bg-[#183B4E] p-6 md:p-12 flex flex-col md:flex-row gap-8 text-white">
+      <div className="flex-1">
+        <h1 className="text-lg font-medium mb-4"><i className="ri-school-fill"> Success Point School</i></h1>
+        <p>
+          Success Point School offers quality education with a focus on values, innovation, and all-round development to shape a successful future for every student.
         </p>
       </div>
 
-      <div style={{ width: "100%" }}>
-        <h2 style={{ color: "#f5f5f5", fontWeight: "500" }}><i className="ri-corner-up-right-double-line"> Useful Links</i></h2>
-        <ul
-          style={{
-            padding: 0,
-            margin: 0,
-            display: "flex",
-            flexDirection: "column",
-            gap: 12,
-            listStyleType: "none",
-          }}
-        >
+      <div className="flex-1">
+        <h2 className="text-lg font-medium mb-4"><i className="ri-corner-up-right-double-line"> Useful Links</i></h2>
+        <ul className="flex flex-col gap-3">
           <li>
-            <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-home-4-line"> Home</i>
+            <Link to="/" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-home-4-line"> Home</i>
             </Link>
           </li>
           <li>
-            <Link to="/teachers" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-presentation-line"> Teachers</i> 
+            <Link to="/teachers" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-presentation-line"> Teachers</i>
             </Link>
           </li>
           <li>
-            <Link to="/holidays" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-calendar-fill"> Holidays</i>
-            </Link>
-          </li>
-          <li style={{
-            
-          }}>
-            <Link to="/contact-us" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-contacts-book-3-fill"> Contact Us</i>
+            <Link to="/holidays" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-calendar-fill"> Holidays</i>
             </Link>
           </li>
           <li>
-            <Link to="/TalkToUs" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-kakao-talk-fill"> Talk to Us</i> 
+            <Link to="/contact-us" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-contacts-book-3-fill"> Contact Us</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="/TalkToUs" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-kakao-talk-fill"> Talk to Us</i>
             </Link>
           </li>
         </ul>
       </div>
 
-      <div style={{ width: "100%" }}>
-        <h2 style={{ color: "#f5f5f5", fontWeight: "500" }}>Social Links</h2>
-        <ul
-          style={{
-            padding: 0,
-            margin: 0,
-            display: "flex",
-            flexDirection: "column",
-            listStyleType: "none",
-            gap: 12,
-          }}
-        >
+      <div className="flex-1">
+        <h2 className="text-lg font-medium mb-4">Social Links</h2>
+        <ul className="flex flex-col gap-3">
           <li>
             <Link
               to="https://www.facebook.com/profile.php?id=61571967564365"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "white", textDecoration: "none" }}
+              className="text-white no-underline hover:text-gray-300"
             >
-             <i className="ri-facebook-circle-fill">  Facebook </i> 
+              <i className="ri-facebook-circle-fill"> Facebook</i>
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-youtube-fill">  YouTube</i>
+            <Link to="#" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-youtube-fill"> YouTube</i>
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-twitter-fill">  Twitter</i>
+            <Link to="#" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-twitter-fill"> Twitter</i>
             </Link>
           </li>
           <li>
-            <Link to="#" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-instagram-fill">  Instagram</i>
+            <Link to="#" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-instagram-fill"> Instagram</i>
             </Link>
           </li>
           <li>
-            <Link href="#" style={{ color: "white", textDecoration: "none" }}>
-            <i className="ri-telegram-fill"> Telegram</i> 
+            <Link to="#" className="text-white no-underline hover:text-gray-300">
+              <i className="ri-telegram-fill"> Telegram</i>
             </Link>
           </li>
           <li>
@@ -108,66 +79,37 @@ const Footer = () => {
               to="https://www.linkedin.com/in/sonu-kumar-b738a6289/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "white", textDecoration: "none" }}
+              className="text-white no-underline hover:text-gray-300"
             >
-              <i className="ri-linkedin-box-fill">  LinkedIn</i>
+              <i className="ri-linkedin-box-fill"> LinkedIn</i>
             </Link>
           </li>
         </ul>
       </div>
 
-      <div style={{ width: "100%" }}>
-        <h1 style={{ color: "#f5f5f5", fontWeight: "500" }}>Enquiry</h1>
-        <form action="">
+      <div className="flex-1">
+        <h1 className="text-lg font-medium mb-4">Enquiry</h1>
+        <form className="flex flex-col gap-3">
           <input
             name="fullName"
             placeholder="Full Name"
             required
-            style={{
-              border: "none",
-              borderRadius: 4,
-              padding: 12,
-              width: "100%",
-              background: "lightgray",
-              marginBottom: 12,
-            }}
+            className="border-none rounded-md p-3 w-full bg-gray-200"
           />
           <input
             name="email"
             placeholder="example@.com"
             type="email"
             required
-            style={{
-              border: "none",
-              borderRadius: 4,
-              padding: 12,
-              width: "100%",
-              background: "lightgray",
-              marginBottom: 12,
-            }}
+            className="border-none rounded-md p-3 w-full bg-gray-200"
           />
           <textarea
             name="message"
             placeholder="Message"
-            style={{
-              border: "none",
-              borderRadius: 4,
-              padding: 12,
-              width: "100%",
-              background: "lightgray",
-              marginBottom: 12,
-            }}
+            className="border-none rounded-md p-3 w-full bg-gray-200"
           />
           <button
-            style={{
-              border: "none",
-              borderRadius: 4,
-              padding: 12,
-              width: "fit-content",
-              background: "orange",
-              color: "white",
-              margin: "12px 24px",
-            }}
+            className="border-none rounded-md p-3 bg-orange-500 text-white hover:bg-orange-600"
           >
             Submit
           </button>

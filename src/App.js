@@ -1,9 +1,11 @@
+import 'animate.css';
+import React from 'react'
 import {
   BrowserRouter,
    Routes,
     Route
   } from 'react-router-dom'
-  import 'remixicon/fonts/remixicon.css'
+import 'remixicon/fonts/remixicon.css'
 import Home from './Components/Home'
 import Teachers from './Components/Teachers'
 import Holidays from './Components/holidays'

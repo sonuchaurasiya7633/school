@@ -78,51 +78,27 @@ const teachers = [
 
 const Teachers = () => {
   return (
-   <div>
-     <Nav/>
+    <div>
+      <Nav />
       <div>
-        <header style={{
-          height:280,
-          backgroundImage: 'linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% )',
-          display:'flex',
-          justifyContent:'center',
-          alignItems:'center'
-        }}>
-          <h1 style={{
-            fontSize:60,
-            color:'white'
-          }}><i class="ri-user-voice-fill" style={{
-            marginRight:'89px'
-          }}> Teachers</i> </h1>
+        <header className="h-72 bg-gradient-to-r from-purple-900 to-purple-700 flex justify-center items-center">
+          <h1 className="text-4xl md:text-6xl text-white flex items-center">
+            <i className="ri-user-voice-fill mr-4"></i> Teachers
+          </h1>
         </header>
 
-        <section style={{
-          width:'80%',
-          margin: '0 auto',
-          padding:'80px 0',
-          display:'flex',
-          flexWrap:'wrap',
-          columnGap:'5%',
-          roeGap:48
-        }}>
-
-           {
-           teachers.map(function(item,index) {
-             return (
-              <div style={{
-                width:'20%'
-              }}  key = {index}>
-              <img src={item.image} width="100%" alt="Teacher"/>
-              <h1 style={{padding:0, marginBottom:4}}> {item.name}</h1>
-              <p style={{padding:0, margin:0 , color:'gray'}}>{item.qua}</p>
-              </div>
-             )
-           })
-           }
+        <section className="w-11/12 mx-auto py-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {teachers.map((item, index) => (
+            <div className="w-full" key={index}>
+              <img src={item.image} alt="Teacher" className="w-full rounded-md" />
+              <h1 className="text-lg font-semibold mt-2">{item.name}</h1>
+              <p className="text-gray-500 text-sm">{item.qua}</p>
+            </div>
+          ))}
         </section>
       </div>
-     <Footer/>
-   </div>
+      <Footer />
+    </div>
   )
 }
 export default Teachers

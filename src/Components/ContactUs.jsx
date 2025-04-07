@@ -22,127 +22,54 @@ const ContactUs = () => {
   return (
     <div>
       <Nav />
-      <div
-        style={{
-          display: 'flex',
-          padding: 64,
-          gap: 34,
-        }}
-      >
-        <img src="./images/contact.svg" width="50%" alt=" " />
-        <div
-          style={{
-            width: '50%',
-          }}
-        >
+      <div className="flex flex-col md:flex-row p-4 md:p-16 gap-8">
+        <img src="./images/contact.svg" className="w-full md:w-1/2 object-contain" alt=" " />
+        <div className="w-full md:w-1/2">
           <form
-            onSubmit={handleSubmit} // Updated to use handleSubmit
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 24,
-            }}
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-6"
           >
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 9,
-              }}
-            >
-              <label
-                style={{
-                  fontSize: 18,
-                  fontWeight: 500,
-                }}
-              >
-                Fullname
-              </label>
+            <div className="flex flex-col gap-2">
+              <label className="text-base md:text-lg font-medium">Fullname</label>
               <input 
-              value={fullname}
+                value={fullname}
                 onChange={(e) => setFullname(e.target.value)}
                 required
                 type="text"
                 name="fullname"
                 placeholder="Enter your Fullname"
-                style={{
-                  border: '2px solid #ccc',
-                  borderRadius: 5,
-                  padding: 14,
-                }}
+                className="border-2 border-gray-300 rounded-md p-2 md:p-3 text-sm md:text-base"
               />
             </div>
 
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 9,
-              }}
-            >
-              <label
-                style={{
-                  fontSize: 18,
-                  fontWeight: 500,
-                }}
-              >
-                Email
-              </label>
+            <div className="flex flex-col gap-2">
+              <label className="text-base md:text-lg font-medium">Email</label>
               <input
-                 value={email}
+                value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 type="email"
                 name="email"
                 placeholder="example@email.com"
-                style={{
-                  border: '2px solid #ccc',
-                  borderRadius: 5,
-                  padding: 14,
-                }}
+                className="border-2 border-gray-300 rounded-md p-2 md:p-3 text-sm md:text-base"
               />
             </div>
 
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 9,
-              }}
-            >
-              <label
-                style={{
-                  fontSize: 18,
-                  fontWeight: 500,
-                }}
-              >
-                Message
-              </label>
+            <div className="flex flex-col gap-2">
+              <label className="text-base md:text-lg font-medium">Message</label>
               <textarea
-                value={message} // for default
+                value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 name="message"
                 placeholder="Write your query or message here"
                 rows={4}
-                style={{
-                  border: '2px solid #ccc',
-                  borderRadius: 5,
-                  padding: 14,
-                }}
+                className="border-2 border-gray-300 rounded-md p-2 md:p-3 text-sm md:text-base"
               />
             </div>
             <button
-              type="submit" // Ensure the button is of type "submit"
-              style={{
-                border: 'none',
-                width: 'fit-content',
-                padding: '14px 32px',
-                borderRadius: 4,
-                background: '#6c63ff',
-                color: 'white',
-                fontWeight: 700,
-              }}
+              type="submit"
+              className="bg-indigo-600 text-white font-bold py-2 md:py-3 px-6 md:px-8 rounded-md text-sm md:text-base hover:bg-indigo-700"
             >
               SUBMIT
             </button>

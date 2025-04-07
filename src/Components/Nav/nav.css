@@ -1,6 +1,22 @@
- .talk-btn:hover{
- background: orange !important;
- border: 2px solid #2de9d6;
- border-radius: 32px;
- 
+.talk-btn:hover {
+  background: orange !important;
+  border: 2px solid #2de9d6;
+  border-radius: 32px;
+}
+
+nav.scrolled > div {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Ensure compatibility with Tailwind's responsive utilities */
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
 }

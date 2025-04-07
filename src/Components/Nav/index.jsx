@@ -1,114 +1,58 @@
-import {  Link } from 'react-router-dom';
-import "./nav.css"
- const menus = [
+import { Link } from 'react-router-dom';
+import "./nav.css";
+
+const menus = [
   {
-    label:'home',
-    href:'/',
+    label: 'home',
+    href: '/',
     icons: <i className="ri-home-3-fill"></i>,
   },
-
   {
-    label:'Teachers',
-    href:'/Teachers',
-    icons:<i className="ri-presentation-line"></i>,
+    label: 'Teachers',
+    href: '/Teachers',
+    icons: <i className="ri-presentation-line"></i>,
   },
-
   {
-    label:'Holidays',
-    href:'/Holidays',
-    icons: <i className="ri-calendar-fill"> </i>,
+    label: 'Holidays',
+    href: '/Holidays',
+    icons: <i className="ri-calendar-fill"></i>,
   },
-
   {
-    label:'Contact Us',
-    href:'/Contact-Us',
+    label: 'Contact Us',
+    href: '/Contact-Us',
     icons: <i className="ri-contacts-book-3-fill"></i>,
   },
- ]
-
+];
 
 const Nav = () => {
   return (
-    <div>
-      <nav
-        style={{
-          background: 'white',
-          display: 'flex',
-          justifyContent: 'space-between',
-          padding: '0 48px',
-          boxShadow: '0 8px 8px rgba(0, 0, 0, 0.1)',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 20,
-          }}
-        >
-          {/* Use <img> for the logo */}
+    <div className="sticky top-0 left-0 z-50">
+      <nav className="bg-white flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-4 shadow-md">
+        <div className="flex items-center gap-4 md:gap-6">
           <img
             src="./images/logo.png"
             alt="Logo"
-            width="60px"
-            height="60px"
+            className="w-12 h-12 md:w-16 md:h-16"
           />
-          <h1>Success Point School</h1>
+          <h1 className="text-lg md:text-2xl font-bold">Success Point School</h1>
         </div>
 
-        <ul
-          style={{
-            display: 'flex',
-            listStyle: 'none',
-            padding: 0,
-            margin: 0,
-          }} >
+        <ul className="flex flex-col md:flex-row list-none p-0 m-0 gap-4 md:gap-6">
+          {menus.map((menu, index) => (
+            <li key={index} className="flex items-center">
+              <Link
+                to={menu.href}
+                className="flex items-center text-black text-sm md:text-base no-underline hover:text-blue-500"
+              >
+                {menu.icons} <span className="ml-2">{menu.label}</span>
+              </Link>
+            </li>
+          ))}
 
-            
-           {
-           menus.map(function(menu,index){
-            return (
-              <li key={index}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              padding: '32px 24px',
-            }}
-            >
-            {/* Use <Link> with the "to" attribute */}
+          <li className="flex items-center">
             <Link
-              to={menu.href}
-              style={{
-                textDecoration: 'none',
-                color: 'black',
-                fontSize: 17,
-              }}
-            >
-             {menu.icons}  {menu.label}
-            </Link>
-          </li>
-
-            )
-           })
-           }
-
-          <li
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              padding: '32px 24px',
-            }}
-          >
-            <Link
-              to="/TalkToUs" className='talk-btn'
-              style={{
-                textDecoration: 'none',
-                color: 'white',
-                fontSize: 17,
-                background: 'dodgerblue',
-                padding: '12px 46px',
-                borderRadius: 5,
-              }}
+              to="/TalkToUs"
+              className="talk-btn text-white text-sm md:text-base bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md"
             >
               Talk to Us
             </Link>
@@ -120,3 +64,5 @@ const Nav = () => {
 };
 
 export default Nav;
+
+
